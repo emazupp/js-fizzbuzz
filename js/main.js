@@ -30,6 +30,8 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   } else {
     console.log(iValue);
+    iValue = "";
+    isMultiple = false;
   }
 }
 
