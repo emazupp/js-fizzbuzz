@@ -14,15 +14,22 @@ Consigli del giorno:
 // ! SVOLGIMENTO
 /* creo un for da con i che va da 1 a 100, estremi inclusi */
 let iValue = "";
-let isPrinted = false;
+let isMultiple = false;
 for (let i = 1; i <= 100; i++) {
   /* controllo se è multiplo di 3 */
   if (i % 3 == 0) {
-    isPrinted = true;
+    iValue = "Fizz";
+    isMultiple = true;
   }
   /* controllo se è multipo di 5 */
   if (i % 5 == 0) {
-    isPrinted = true;
+    iValue += "Buzz";
+    isMultiple = true;
+  }
+  if (!isPrinted) {
+    console.log(i);
+  } else {
+    console.log(iValue);
   }
 }
 
