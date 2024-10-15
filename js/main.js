@@ -12,30 +12,19 @@ Consigli del giorno:
 */
 
 // ! SVOLGIMENTO
-/* creo un for da con i che va da 1 a 100, estremi inclusi */
-let iValue = "";
-let isMultiple = false;
+
 for (let i = 1; i <= 100; i++) {
-  /* controllo se è multiplo di 3 */
-  if (i % 3 == 0) {
-    iValue = "Fizz";
-    isMultiple = true;
-  }
-  /* controllo se è multipo di 5 */
-  if (i % 5 == 0) {
-    iValue += "Buzz";
-    isMultiple = true;
-  }
-  if (!isMultiple) {
-    /* se non entra nei due if precedenti allora non è ne multiplo di 3 neanche di 5 */
-    console.log(i);
+  if (i % 15 == 0) {
+    /* controllo prima se i è divisibile per 3 e 5, nel caso stampo FizzBuzz */
+    console.log("FizzBuzz");
+  } else if (i % 5 == 0) {
+    /* controllo se è divisibile per 5, nel caso stampo Buzz */
+    console.log("Buzz");
+  } else if (i % 3 == 0) {
+    /* controllo se è divisibile per 3, nel caso stampo Fizz */
+    console.log("Fizz");
   } else {
-    /* altrimenti stampa il valore ottenuto dentro gli if per i controlli dei multipli */
-    console.log(iValue);
-    /* azzero le variabili */
-    iValue = "";
-    isMultiple = false;
+    /* stampo i se non entro in nessuna condizione */
+    console.log(i);
   }
 }
-
-// ! OUTPUT
