@@ -27,9 +27,12 @@ for (let i = 1; i <= 100; i++) {
     isMultiple = true;
   }
   if (!isMultiple) {
+    /* se non entra nei due if precedenti allora non è ne multiplo di 3 neanche di 5 */
     console.log(i);
   } else {
+    /* altrimenti stampa il valore ottenuto dentro gli if per i controlli dei multipli */
     console.log(iValue);
+    /* azzero le variabili */
     iValue = "";
     isMultiple = false;
   }
